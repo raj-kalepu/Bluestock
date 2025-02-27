@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo_min.png" type="image/x-icon">
+    <title>Bluestock - IPO Dashboard</title>
+    <link rel="stylesheet" href="styling.css">
+</head>
+<body>
+    <script src="iposcript.js"></script>
+    <div class="sidebar">
+        <div class="logo">
+            <img src="logo.png" alt="Bluestock Logo" height="15px">
+        </div>
+        
+        <div class="menu-list">
+            <a href="index.html" class="menu-item active">
+                <i class="fas fa-th-large"></i>
+                Dashboard
+            </a>
+            <a href="manage-ipo.html" class="menu-item">
+                <i class="fas fa-tasks"></i>
+                Manage IPO
+            </a>
+            <a href="#" class="menu-item">
+                <i class="fas fa-chart-line"></i>
+                IPO Subscription
+            </a>
+            <a href="#" class="menu-item">
+                <i class="fas fa-file-alt"></i>
+                IPO Allotment
+            </a>
+            <div class="mt-4 mb-2 ps-4 text-muted small">OTHERS</div>
+            <a href="#" class="menu-item">
+                <i class="fas fa-cog"></i>
+                Settings
+            </a>
+            <a href="#" class="menu-item">
+                <i class="fas fa-plug"></i>
+                API Manager
+            </a>
+            <a href="#" class="menu-item">
+                <i class="fas fa-user"></i>
+                Account
+            </a>
+            <a href="#" class="menu-item">
+                <i class="fas fa-question-circle"></i>
+                Help
+            </a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="d-flex justify-content-between align-items-start mb-4">
+            <div class="search-bar flex-grow-1 me-4">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="user-section d-flex align-items-center gap-3">
+                <img src="profile.png" alt="User" class="rounded-circle" class="img-fluid" style="max-width: 30px; max-height: 30px;">
+                <span>Hi, Gowtham Raj</span>
+            </div>
+        </div>
+
+        <h4 class="mb-4">Dashboard</h4>
+
+        <div class="dashboard-sections">
+            <div class="section-ipo-dashboard">
+                <h5 class="mb-3">IPO Dashboard India</h5>
+                <div class="circles-container">
+                    <div class="stat-circle total-ipo">
+                        <h2>30</h2>
+                        <p>Total IPO</p>
+                    </div>
+                    <div class="stat-circle ipo-loss">
+                        <h3>9</h3>
+                        <p>IPO in Loss</p>
+                    </div>
+                    <div class="stat-circle ipo-gain">
+                        <h2>20</h2>
+                        <p>IPO in Gain</p>
+                    </div>
+                </div>
+            </div>
+                        
+            <div class="section-quick-links">
+                <div class="quick-links">
+                    <h6 class="mb-3">Quick Links</h6>
+                    <div class="link-item">
+                        <div class="d-flex align-items-center gap-3">
+                            <img src="#" alt="NSE">
+                            <span>NSE India</span>
+                        </div>
+                        <a href="#" class="btn btn-sm btn-light">Visit Now</a>
+                    </div>
+                    <div class="link-item">
+                        <div class="d-flex align-items-center gap-3">
+                            <img src="#" alt="BSE">
+                            <span>BSE India</span>
+                        </div>
+                        <a href="#" class="btn btn-sm btn-light">Visit Now</a>
+                    </div>
+                    <div class="link-item">
+                        <div class="d-flex align-items-center gap-3">
+                            <img src="#" alt="SEBI">
+                            <span>SEBI</span>
+                        </div>
+                        <a href="#" class="btn btn-sm btn-light">Visit Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-main-board">
+                <div class="main-board">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h6>Main Board IPO</h6>
+                        <span class="text-muted small">From 01 Jan 2024</span>
+                    </div>
+                    <div class="donut-chart">
+                        <img src="/api/placeholder/200/200" alt="Donut Chart">
+                    </div>
+                    <div class="status-legend">
+                        <div class="status-item">
+                            <span class="status-dot bg-primary"></span>
+                            Upcoming (15)
+                        </div>
+                        <div class="status-item">
+                            <span class="status-dot bg-success"></span>
+                            New Listed (25)
+                        </div>
+                        <div class="status-item">
+                            <span class="status-dot bg-warning"></span>
+                            Ongoing (2)
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
